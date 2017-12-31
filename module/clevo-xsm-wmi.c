@@ -1568,8 +1568,6 @@ static int __init clevo_xsm_init(void)
 		return -EINVAL;
 	}
 
-	printk ("gothere");
-
 	dmi_check_system(clevo_xsm_dmi_table);
 
 	if (!wmi_has_guid(CLEVO_EVENT_GUID)) {
